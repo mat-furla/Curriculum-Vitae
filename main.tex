@@ -6,16 +6,15 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-% moderncv themes
-\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
-\moderncvcolor{green}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+\moderncvstyle{classic}                       % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
-\usepackage[utf8]{inputenc}                        % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[utf8]{inputenc}                   % if you are not using xelatex ou lualatex, replace by the encoding you are using
 \usepackage[T1]{fontenc}
 \usepackage[brazil]{babel}
 \usepackage{hyphenat}
@@ -23,41 +22,54 @@
 
 % adjust the page margins
 \usepackage[scale=0.77]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
 \name{Matheus}{Furlanetto}
-\title{22 anos, Brasil}                                 % optional, remove / comment the line if not wanted
-\phone[mobile]{+55 (19) 99837-3871}                   % optional, , remove / comment the line if not wanted
-\email{matfurla79@gmail.com}                               %  remove / comment the line if not wanted
+\title{22 anos, Brasil}                       % optional, remove / comment the line if not wanted
+\phone[mobile]{+55 (19) 99837-3871}           % optional, , remove / comment the line if not wanted
+\email{matfurla79@gmail.com}                  %  remove / comment the line if not wanted
+\homepage{github.com/mat-furla}               % optional, remove the line if not wanted
 
 \begin{document}
 \makecvtitle
+
 \section{Formação Acadêmica}
-\cventry{2018--Atual}{Bacharelado}{Universidade Federal de Itajubá (UNIFEI)}{Itajubá - Brazil}{\textit{Engenharia de Controle e Automação}}{} 
+\cventry{2018--Atual}{Bacharelado}{Universidade Federal de Itajubá (UNIFEI)}
+{Itajubá - Brazil}{\textit{Engenharia de Controle e Automação}}{}
+
 \section{Experiência}
-\cventry{2019--2020}{Assistente de Projetos}{Asimov Júnior}{Itajubá}{}{Durante seis meses trabalhei na
-área de desktop, realizando diversos projetos Frontend através do framework Angular e no backend utilizando
-primordialmente o Firebase, no período restante migrei para a área de Automação, participando na estruturação
-e na administração do mesmo.
-}
+\cventry{2019--2020}{Assistente de Projetos}{Asimov Júnior}{Itajubá}{}{Durante
+seis meses trabalhei na área de desktop, realizando diversos projetos Frontend
+através do framework Angular e no backend utilizando primordialmente o Firebase,
+no período restante migrei para a área de Automação, participando na estruturação
+e na administração do mesmo.}
+
 \section{Cursos}
+\cvitemwithcomment{2020--2020}{GraphQL: Criando APIs profissionais e flexíveis}{Udemy}
+\cvitemwithcomment{2019--2020}{Curso de Vendas Completo - Da prospecção ao fechamento}{Udemy}
 \cvitemwithcomment{2019--2019}{Construindo Aplicações Web Com o Novo Angular (4, 5 e 6)}{Udemy}
 \cvitemwithcomment{2019--2019}{Criando aplicações com Angular, Material e Firebase}{Udemy}
-\cvitemwithcomment{2020--2020}{Curso de Vendas Completo - Da prospecção ao fechamento}{Udemy}
-\cvitemwithcomment{2020--2020}{GraphQL: Criando APIs profissionais e flexíveis}{Udemy}
+
 \section{Linguagens}
 \cvitemwithcomment{Português}{Nativo}{}
 \cvitemwithcomment{Inglês}{Intermediário}{Wizard Idiomas - Louveira-SP}
-\cvitemwithcomment{Espanhol}{Básico}{Wizard Idiomas - Louveira-SP}
+\cvitemwithcomment{Espanhol}{Básico}{}
+
 \section{Áreas de Conhecimento}
 \cvitem{Linguagens}{C, C++, Typescript, Python}
 \cvitem{Frontend}{Angular, VueJS}
 \cvitem{Backend}{NodeJS, GraphQL, REST API}
 \cvitem{Database}{Firebase, MySQL, PostgreSQL}
-\cvitem{Outros}{Docker, LaTeX, Git, Linux, Metodologia Agile (SCRUM)}
-%\section{Sobre Mim}
-%\cvitem{}{A ser desenvolvido}
+\cvitem{Outros}{Docker, \LaTeX, Git, Linux, Metodologia Agile (SCRUM)}
+
+\section{Sobre Mim}
+\cvitem{}{Tenho muita determinação em cumprir meus objetivos, dentre os maiores
+estão os de adquirir um grande conhecimento em minha área de atuação e conseguir
+repassar adiante essa aprendizagem com meu time de colegas. Apesar do pouco tempo
+de experiência profissional tenho grande interesse na área e o empenho para aprender
+coisas novas.}
+
 \clearpage
 \end{document}
